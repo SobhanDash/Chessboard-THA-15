@@ -13,7 +13,8 @@
   background: bisque;
 }
 
-.main {
+.board,
+.board2 {
   width: 222px;
   height: 222px;
   border: 10px solid black;
@@ -24,19 +25,27 @@
   box-shadow: 4px 6px 8px 0 rgb(185, 133, 69);
 }
 
-.main .cell {
+.board .cell,
+.board2 .box {
   width: 25px;
   height: 25px;
   float: left;
 }
 
-.main div:nth-child(16n + 16),
-.main div:nth-child(16n + 14),
-.main div:nth-child(16n + 12),
-.main div:nth-child(16n + 10),
-.main div:nth-child(16n + 7),
-.main div:nth-child(16n + 5),
-.main div:nth-child(16n + 3),
-.main div:nth-child(16n + 1) {
+.board div:nth-child(16n + 16),
+.board div:nth-child(16n + 14),
+.board div:nth-child(16n + 12),
+.board div:nth-child(16n + 10),
+.board div:nth-child(16n + 7),
+.board div:nth-child(16n + 5),
+.board div:nth-child(16n + 3),
+.board div:nth-child(16n + 1) {
   background-color: black;
+}
+
+.chessboards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
